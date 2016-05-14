@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<!-- var a = 10, b = 3, c = 40, d = 20;
+Найти самую большую переменную. 
+Умножить её значение на 20,
+следующую по величине умножить на 10,
+следующую по величине умножить на 5,
+с наименьшей ничего не делать.
+Проделать это для 3 и 4 перменных; -->
+<body>
+<script>
+var	a=10, b=30, c=40, d=20;
+var max1, max2, max3;
+var max1_v, max2_v, max3_v;
+
+if (a>b && a>c && a>d) {
+	max1_v = a;
+	max1 = a*20;
+}
+else if (b>a && b>c && b>d) {
+	max1_v = b;
+	max1 = b*20;
+}
+else if (c>a && c>b && c>d) {
+	max1_v = c;
+	max1 = c*20;
+}
+
+else if (d>a && d>b && d>c) {
+	max1_v = d;
+	max1 = d*20;
+}
+
+if (a>max1_v || a>b || a>c || a>d) {
+	max2_v = a;
+	max2 = a*10;
+}
+
+else if (b>max1_v || b>a || b>c || b>d) {
+	max2_v = b;
+	max2 = b*10;
+}
+else if (c>max1_v || c>a || c>b || c>d) {
+	max2_v = c;
+	max2 = c*10;
+}
+
+else if (d>max1_v || d>a || d>b || d>c) {
+	max2_v = d;
+	max2 = d*10;
+}
+debugger;
+if (a > max2_v && a> max1_v && a>b && a>c && a>d) {
+	max3_v = a;
+	max3 = a*5;
+}
+
+else if (b> max2_v && b> max1_v && b>a && b>c && b>d) {
+	max3_v = b;
+	max3 = b*5;
+}
+else if (c> max2_v && c> max1_v && c>a && c>b && c>d) {
+	max3_v = c;
+	max3 = c*5;
+}
+
+else if (d>max2_v && d>max1_v && d>a && d>b || d>c) {
+	max3_v = d;
+	max3 = d*5;
+
+}
+
+alert (max1);
+alert (max2);
+alert (max3);
+</script>
+</body>
+
+</html>
+
+
+
+
