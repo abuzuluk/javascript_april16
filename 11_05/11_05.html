@@ -10,8 +10,8 @@
 <body>
 <script>
 var	a=10, b=30, c=40, d=20;
-var max1, max2, max3;
-var max1_v, max2_v, max3_v;
+var max1, max2, max3;  //переменные для вывода посчитанных значений
+var max1_v, max2_v, max3_v; // переменные для сравнения с уже найденными максимальными значениями
 
 if (a>b && a>c && a>d) {
 	max1_v = a;
@@ -55,7 +55,7 @@ if (a > max2_v && a> max1_v && a>b && a>c && a>d) {
 	max3 = a*5;
 }
 
-else if (b> max2_v && b> max1_v && b>a && b>c && b>d) {
+else if (b> max2_v && b> max1_v && b>a && b>c && b>d) {  // при нахождении третьего максимального значения, присваивает max3_v значение 30, хотя должно дойти до d-условия и записать 20.
 	max3_v = b;
 	max3 = b*5;
 }
